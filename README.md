@@ -1,1 +1,6 @@
-basicWebServer - Basic implementation of dotnet core's webserver using Kestrel
+Getting Started
+===
+
+* dotnet restore
+
+* dotnet run

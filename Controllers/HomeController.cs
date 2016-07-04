@@ -6,9 +6,10 @@ namespace aspnetcoreapp.Controllers
     public class HomeController : Controller
     {
         // GET: /Home
-        public string Index() 
+        public IActionResult Index() 
         {
-            return "Defualt Home controller root action";
+            ViewData["specialParam"] = "Welcome to ASP.NET MVC!";
+            return View();
         }
 
         // GET: /Home/Test/{id?}

@@ -1,7 +1,6 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "debugType": "portable",
     "emitEntryPoint": true
   },
   "dependencies": {
@@ -15,15 +14,11 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.AspNetCore.Mvc.ViewFeatures" : "*",
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": [
-        "dotnet5.6"
-      ]
+      "imports": "dnxcore50"
     }
   }
 }

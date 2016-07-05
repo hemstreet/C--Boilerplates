@@ -1,5 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
 
 namespace aspnetcoreapp.Controllers
 {
@@ -8,7 +11,8 @@ namespace aspnetcoreapp.Controllers
         // GET: /Home
         public IActionResult Index() 
         {
-            ViewData["specialParam"] = "Welcome to ASP.NET MVC!";
+            ViewData["Message"] = "application message.";
+
             return View();
         }
 
@@ -23,8 +27,9 @@ namespace aspnetcoreapp.Controllers
                 // We have passed in a custom ID value
                 html +=  $", optional ID: {id}";
             }
-            
-            return HtmlEncoder.Default.Encode(html);
+
+           return html;
+            // return HtmlEncoder.Default.Encode(html);
         }    
     }
 }

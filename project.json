@@ -5,22 +5,24 @@
     "emitEntryPoint": true
   },
   "dependencies": {
-     "Microsoft.AspNetCore.Mvc": "*",
-     "Microsoft.NETCore.App": {
+    "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0"
     },
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+    "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Razor.Tools": {
+      "version": "1.0.0-preview2-final",
+      "type": "build"
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0"
-        }
-      },
-      "imports": "dnxcore50"
+      "imports": [
+        "dotnet5.6"
+      ]
     }
   }
 }

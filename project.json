@@ -15,6 +15,7 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
+    "Microsoft.AspNetCore.Mvc.ViewFeatures" : "*",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
   },

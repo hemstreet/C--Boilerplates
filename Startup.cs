@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace aspnetcoreapp
 {
-      public class Startup
+    public class Startup
     {
 
         public void ConfigureServices(IServiceCollection services)
@@ -15,13 +15,10 @@ namespace aspnetcoreapp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
+            // Need to customize this later for surpressing prod error handling
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                System.Console.WriteLine("\r\n\r\nWe have hit an error, throw a nice page here\r\n\r\n");
             }
 
             app.UseMvc(routes =>

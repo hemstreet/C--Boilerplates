@@ -11,8 +11,7 @@ namespace aspnetcoreapp.Controllers
         // GET: /Home
         public IActionResult Index() 
         {
-            ViewData["Message"] = "application message.";
-
+            ViewData["Message"] = "Your application description page.";
             return View();
         }
 
